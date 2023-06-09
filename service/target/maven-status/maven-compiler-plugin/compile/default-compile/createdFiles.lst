@@ -1,0 +1,14 @@
+sars\gov\za\management\service\UserServiceLocal.class
+sars\gov\za\management\service\AssessmentService.class
+sars\gov\za\management\service\SchoolServiceLocal.class
+sars\gov\za\management\service\SubjectService.class
+sars\gov\za\management\service\AssessmentServiceLocal.class
+sars\gov\za\management\service\UserService.class
+sars\gov\za\management\service\SubjectServiceLocal.class
+sars\gov\za\management\service\GradeServiceLocal.class
+sars\gov\za\management\service\GradeService.class
+sars\gov\za\management\service\SchoolService.class
+sars\gov\za\management\service\StudentService.class
+sars\gov\za\management\service\EmployeeServiceLocal.class
+sars\gov\za\management\service\StudentServiceLocal.class
+sars\gov\za\management\service\EmployeeService.class

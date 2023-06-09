@@ -1,0 +1,2881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="sars.gov.za.management.service.ServiceLayerTest" time="4.613" tests="7" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\2023\management\service\target\test-classes;C:\2023\management\service\target\classes;C:\Users\mutem\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\2023\management\persistence\target\persistence-1.0-SNAPSHOT.jar;C:\2023\management\domain\target\domain-1.0-SNAPSHOT.jar;C:\2023\management\common\target\common-1.0-SNAPSHOT.jar;C:\Users\mutem\.m2\repository\joda-time\joda-time\2.10.1\joda-time-2.10.1.jar;C:\Users\mutem\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\Users\mutem\.m2\repository\com\zaxxer\HikariCP\3.2.0\HikariCP-3.2.0.jar;C:\Users\mutem\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\mutem\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\mutem\.m2\repository\org\hibernate\hibernate-envers\5.2.18.Final\hibernate-envers-5.2.18.Final.jar;C:\Users\mutem\.m2\repository\org\springframework\data\spring-data-jpa\2.1.9.RELEASE\spring-data-jpa-2.1.9.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\data\spring-data-commons\2.1.9.RELEASE\spring-data-commons-2.1.9.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-orm\5.2.7.RELEASE\spring-orm-5.2.7.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-jdbc\5.2.7.RELEASE\spring-jdbc-5.2.7.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-context\5.2.7.RELEASE\spring-context-5.2.7.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-expression\5.2.7.RELEASE\spring-expression-5.2.7.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-aop\5.1.8.RELEASE\spring-aop-5.1.8.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-tx\5.1.8.RELEASE\spring-tx-5.1.8.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-beans\5.2.7.RELEASE\spring-beans-5.2.7.RELEASE.jar;C:\Users\mutem\.m2\repository\org\aspectj\aspectjrt\1.9.3\aspectjrt-1.9.3.jar;C:\Users\mutem\.m2\repository\org\hibernate\hibernate-core\5.2.18.Final\hibernate-core-5.2.18.Final.jar;C:\Users\mutem\.m2\repository\org\jboss\logging\jboss-logging\3.3.1.Final\jboss-logging-3.3.1.Final.jar;C:\Users\mutem\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\mutem\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.1.Final\jboss-transaction-api_1.2_spec-1.0.1.Final.jar;C:\Users\mutem\.m2\repository\org\jboss\jandex\2.0.3.Final\jandex-2.0.3.Final.jar;C:\Users\mutem\.m2\repository\com\fasterxml\classmate\1.3.0\classmate-1.3.0.jar;C:\Users\mutem\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\mutem\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.1.Final\hibernate-commons-annotations-5.0.1.Final.jar;C:\Users\mutem\.m2\repository\org\hibernate\hibernate-entitymanager\5.2.18.Final\hibernate-entitymanager-5.2.18.Final.jar;C:\Users\mutem\.m2\repository\com\microsoft\sqlserver\mssql-jdbc\9.3.1.jre8-preview\mssql-jdbc-9.3.1.jre8-preview.jar;C:\Users\mutem\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-test\5.2.7.RELEASE\spring-test-5.2.7.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-core\5.2.7.RELEASE\spring-core-5.2.7.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-jcl\5.2.7.RELEASE\spring-jcl-5.2.7.RELEASE.jar;C:\Users\mutem\.m2\repository\org\apache\poi\poi\3.17\poi-3.17.jar;C:\Users\mutem\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\mutem\.m2\repository\org\apache\commons\commons-collections4\4.1\commons-collections4-4.1.jar;C:\Users\mutem\.m2\repository\org\mockito\mockito-core\2.23.4\mockito-core-2.23.4.jar;C:\Users\mutem\.m2\repository\net\bytebuddy\byte-buddy\1.9.3\byte-buddy-1.9.3.jar;C:\Users\mutem\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.3\byte-buddy-agent-1.9.3.jar;C:\Users\mutem\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\mutem\.m2\repository\org\apache\poi\poi-ooxml\3.17\poi-ooxml-3.17.jar;C:\Users\mutem\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.17\poi-ooxml-schemas-3.17.jar;C:\Users\mutem\.m2\repository\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar;C:\Users\mutem\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\mutem\.m2\repository\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar;C:\Users\mutem\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\mutem\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\mutem\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.1\jaxb-impl-2.3.1.jar;C:\Users\mutem\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\mutem\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\mutem\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\mutem\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\mutem\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\mutem\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\mutem\.m2\repository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;C:\Users\mutem\.m2\repository\org\slf4j\slf4j-simple\1.6.1\slf4j-simple-1.6.1.jar;C:\Users\mutem\.m2\repository\org\javassist\javassist\3.25.0-GA\javassist-3.25.0-GA.jar;"/>
+    <property name="java.vm.vendor" value="AdoptOpenJDK"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Africa/Harare"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="ZA"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.302.1-hotspot\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\mutem\AppData\Local\Temp\surefire8422379427156369664\surefirebooter-20230608143026653_3.jar C:\Users\mutem\AppData\Local\Temp\surefire8422379427156369664 2023-06-08T14-30-24_475-jvmRun1 surefire-20230608143026653_1tmp surefire_0-20230608143026653_2tmp"/>
+    <property name="surefire.test.class.path" value="C:\2023\management\service\target\test-classes;C:\2023\management\service\target\classes;C:\Users\mutem\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\2023\management\persistence\target\persistence-1.0-SNAPSHOT.jar;C:\2023\management\domain\target\domain-1.0-SNAPSHOT.jar;C:\2023\management\common\target\common-1.0-SNAPSHOT.jar;C:\Users\mutem\.m2\repository\joda-time\joda-time\2.10.1\joda-time-2.10.1.jar;C:\Users\mutem\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\Users\mutem\.m2\repository\com\zaxxer\HikariCP\3.2.0\HikariCP-3.2.0.jar;C:\Users\mutem\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\mutem\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\mutem\.m2\repository\org\hibernate\hibernate-envers\5.2.18.Final\hibernate-envers-5.2.18.Final.jar;C:\Users\mutem\.m2\repository\org\springframework\data\spring-data-jpa\2.1.9.RELEASE\spring-data-jpa-2.1.9.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\data\spring-data-commons\2.1.9.RELEASE\spring-data-commons-2.1.9.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-orm\5.2.7.RELEASE\spring-orm-5.2.7.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-jdbc\5.2.7.RELEASE\spring-jdbc-5.2.7.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-context\5.2.7.RELEASE\spring-context-5.2.7.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-expression\5.2.7.RELEASE\spring-expression-5.2.7.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-aop\5.1.8.RELEASE\spring-aop-5.1.8.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-tx\5.1.8.RELEASE\spring-tx-5.1.8.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-beans\5.2.7.RELEASE\spring-beans-5.2.7.RELEASE.jar;C:\Users\mutem\.m2\repository\org\aspectj\aspectjrt\1.9.3\aspectjrt-1.9.3.jar;C:\Users\mutem\.m2\repository\org\hibernate\hibernate-core\5.2.18.Final\hibernate-core-5.2.18.Final.jar;C:\Users\mutem\.m2\repository\org\jboss\logging\jboss-logging\3.3.1.Final\jboss-logging-3.3.1.Final.jar;C:\Users\mutem\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\mutem\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.1.Final\jboss-transaction-api_1.2_spec-1.0.1.Final.jar;C:\Users\mutem\.m2\repository\org\jboss\jandex\2.0.3.Final\jandex-2.0.3.Final.jar;C:\Users\mutem\.m2\repository\com\fasterxml\classmate\1.3.0\classmate-1.3.0.jar;C:\Users\mutem\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\mutem\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.1.Final\hibernate-commons-annotations-5.0.1.Final.jar;C:\Users\mutem\.m2\repository\org\hibernate\hibernate-entitymanager\5.2.18.Final\hibernate-entitymanager-5.2.18.Final.jar;C:\Users\mutem\.m2\repository\com\microsoft\sqlserver\mssql-jdbc\9.3.1.jre8-preview\mssql-jdbc-9.3.1.jre8-preview.jar;C:\Users\mutem\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-test\5.2.7.RELEASE\spring-test-5.2.7.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-core\5.2.7.RELEASE\spring-core-5.2.7.RELEASE.jar;C:\Users\mutem\.m2\repository\org\springframework\spring-jcl\5.2.7.RELEASE\spring-jcl-5.2.7.RELEASE.jar;C:\Users\mutem\.m2\repository\org\apache\poi\poi\3.17\poi-3.17.jar;C:\Users\mutem\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\mutem\.m2\repository\org\apache\commons\commons-collections4\4.1\commons-collections4-4.1.jar;C:\Users\mutem\.m2\repository\org\mockito\mockito-core\2.23.4\mockito-core-2.23.4.jar;C:\Users\mutem\.m2\repository\net\bytebuddy\byte-buddy\1.9.3\byte-buddy-1.9.3.jar;C:\Users\mutem\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.3\byte-buddy-agent-1.9.3.jar;C:\Users\mutem\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\mutem\.m2\repository\org\apache\poi\poi-ooxml\3.17\poi-ooxml-3.17.jar;C:\Users\mutem\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.17\poi-ooxml-schemas-3.17.jar;C:\Users\mutem\.m2\repository\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar;C:\Users\mutem\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\mutem\.m2\repository\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar;C:\Users\mutem\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\mutem\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\mutem\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.1\jaxb-impl-2.3.1.jar;C:\Users\mutem\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\mutem\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\mutem\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\mutem\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\mutem\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\mutem\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\mutem\.m2\repository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;C:\Users\mutem\.m2\repository\org\slf4j\slf4j-simple\1.6.1\slf4j-simple-1.6.1.jar;C:\Users\mutem\.m2\repository\org\javassist\javassist\3.25.0-GA\javassist-3.25.0-GA.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\mutem"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.302.1-hotspot\jre"/>
+    <property name="basedir" value="C:\2023\management\service"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\mutem\AppData\Local\Temp\surefire8422379427156369664\surefirebooter-20230608143026653_3.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.302.1-hotspot\jre\lib\resources.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.302.1-hotspot\jre\lib\rt.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.302.1-hotspot\jre\lib\sunrsasign.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.302.1-hotspot\jre\lib\jsse.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.302.1-hotspot\jre\lib\jce.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.302.1-hotspot\jre\lib\charsets.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.302.1-hotspot\jre\lib\jfr.jar;C:\Program Files\AdoptOpenJDK\jdk-8.0.302.1-hotspot\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_302-internal-202105071806-b01"/>
+    <property name="user.name" value="mutem"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.302.1-hotspot\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\mutem\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\mutem\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_302-internal"/>
+    <property name="user.dir" value="C:\2023\management\service"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.302.1-hotspot\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\mutem\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\mutem\bin;C:\Program Files\AdoptOpenJDK\jdk-8.0.302.1-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\xampp\php;C:\composer;C:\Program Files\Git\cmd;C:\Users\mutem\Downloads\apache-maven-3.9.0-bin\apache-maven-3.9.0\bin;C:\Program Files\Azure Data Studio\bin;C:\Program Files\apache-maven-3.9.0\bin;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\DTS\Binn;C:\Users\mutem\AppData\Local\Microsoft\WindowsApps;C:\Users\mutem\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mutem\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Eclipse Adoptium\jdk-8.0.362.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.7.7-hotspot\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2023.1.2\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vm.version" value="25.302-b01"/>
+    <property name="java.ext.dirs" value="C:\Program Files\AdoptOpenJDK\jdk-8.0.302.1-hotspot\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="TestA" classname="sars.gov.za.management.service.ServiceLayerTest" time="0.19">
+    <system-out><![CDATA[Hibernate: 
+    
+    alter table address 
+       drop constraint FKrb91l9ve2aotditavdrna4gtm
+Hibernate: 
+    
+    alter table address_AUD 
+       drop constraint FK8pavhn1oejo2hbfyi0wwxlhk7
+Hibernate: 
+    
+    alter table assessment 
+       drop constraint FKecac2djaj84t6ssnfgb6cw606
+Hibernate: 
+    
+    alter table assessment_AUD 
+       drop constraint FKlqnonjrkv6ocdurjx3ois1t6h
+Hibernate: 
+    
+    alter table contact_detail_AUD 
+       drop constraint FKeshw37x9pafh93xdx81gb6vno
+Hibernate: 
+    
+    alter table employee 
+       drop constraint FK45tyjbjaqd63whyt8vvf4e6mx
+Hibernate: 
+    
+    alter table employee 
+       drop constraint FKphlll6i9d0y8do290pfylk4qd
+Hibernate: 
+    
+    alter table employee_address 
+       drop constraint FK9vm8hlxq7dqhl4euykuhmc4w
+Hibernate: 
+    
+    alter table employee_address 
+       drop constraint FK2ybnvhswp1wfc9xaqcwe7tsoh
+Hibernate: 
+    
+    alter table employee_AUD 
+       drop constraint FKpendlmkecy76ioxqsvu8ymdlc
+Hibernate: 
+    
+    alter table employee_grade 
+       drop constraint FKbm0e56nk8yadiscx960ui2wbi
+Hibernate: 
+    
+    alter table employee_grade 
+       drop constraint FKipnc6frq0c5v64etlxc80i032
+Hibernate: 
+    
+    alter table employee_grade_AUD 
+       drop constraint FKbbgqhfvml1k6un0qy438eqywo
+Hibernate: 
+    
+    alter table employee_subject 
+       drop constraint FKebgd4h69lvaidagr2thkpyfhx
+Hibernate: 
+    
+    alter table employee_subject 
+       drop constraint FKeiy8in9aganye8lq0lkjt5r4l
+Hibernate: 
+    
+    alter table employee_subject_AUD 
+       drop constraint FK68u3k8g4pgcaii1mx433ugf1r
+Hibernate: 
+    
+    alter table grade 
+       drop constraint FKgnpyknjs4abtev9u75xp0iti1
+Hibernate: 
+    
+    alter table grade_AUD 
+       drop constraint FKjm5c5m0s2ejypw6fw7taokqeb
+Hibernate: 
+    
+    alter table school 
+       drop constraint FK7ov9cfvj3tdy3r6y0gpjcqu4k
+Hibernate: 
+    
+    alter table School_Address_AUD 
+       drop constraint FKewp7btqqxuelh4fjkh1biok4b
+Hibernate: 
+    
+    alter table school_AUD 
+       drop constraint FKjh4d6m093u816350hqsr8pbv8
+Hibernate: 
+    
+    alter table student 
+       drop constraint FKotoup89ms54ji1a3ikigmc6va
+Hibernate: 
+    
+    alter table student 
+       drop constraint FK693kxqrk7gfqwv5cmsi6cdwsb
+Hibernate: 
+    
+    alter table student 
+       drop constraint FKa64b46u81lt7cqs08s4jqm2tp
+Hibernate: 
+    
+    alter table student_address 
+       drop constraint FKh23sypqasja117gka6mv44ijd
+Hibernate: 
+    
+    alter table student_address 
+       drop constraint FKaral8t3jfrw3ol9954q4sclyh
+Hibernate: 
+    
+    alter table student_AUD 
+       drop constraint FKj5ymsyc2n7qp56ekm71cdoy09
+Hibernate: 
+    
+    alter table student_subject 
+       drop constraint FK5cvx0kd792xhvd99s3bsbygfq
+Hibernate: 
+    
+    alter table student_subject 
+       drop constraint FKnhw926s5os3ei5wqfaq94j0mh
+Hibernate: 
+    
+    alter table student_subject_AUD 
+       drop constraint FKddsd968it2q7wswp4idb9f2
+Hibernate: 
+    
+    alter table subject 
+       drop constraint FK9e47itp6a7uxgehpmot21yp00
+Hibernate: 
+    
+    alter table subject_AUD 
+       drop constraint FKidfs7r021qwgytnj9jln5l0hq
+Hibernate: 
+    
+    alter table Syst_user 
+       drop constraint FK303l5ksi05yn3fh9w395hcolo
+Hibernate: 
+    
+    alter table Syst_user 
+       drop constraint FKg0xywsky3jjvjosb55t3i8hl3
+Hibernate: 
+    
+    alter table Syst_user_address 
+       drop constraint FK3jm3ryqjqj2ncdsufo51u2fqm
+Hibernate: 
+    
+    alter table Syst_user_address 
+       drop constraint FKoqxew8pkv4o2iti7wr0vf4lvp
+Hibernate: 
+    
+    alter table Syst_user_AUD 
+       drop constraint FKnru271krf5k1vyesi0i0920it
+Hibernate: 
+    
+    drop table address
+Hibernate: 
+    
+    drop table address_AUD
+Hibernate: 
+    
+    drop table assessment
+Hibernate: 
+    
+    drop table assessment_AUD
+Hibernate: 
+    
+    drop table contact_detail
+Hibernate: 
+    
+    drop table contact_detail_AUD
+Hibernate: 
+    
+    drop table employee
+Hibernate: 
+    
+    drop table employee_address
+Hibernate: 
+    
+    drop table employee_AUD
+Hibernate: 
+    
+    drop table employee_grade
+Hibernate: 
+    
+    drop table employee_grade_AUD
+Hibernate: 
+    
+    drop table employee_subject
+Hibernate: 
+    
+    drop table employee_subject_AUD
+Hibernate: 
+    
+    drop table grade
+Hibernate: 
+    
+    drop table grade_AUD
+Hibernate: 
+    
+    drop table hibernate_sequence
+Hibernate: 
+    
+    drop table REVINFO
+Hibernate: 
+    
+    drop table school
+Hibernate: 
+    
+    drop table School_Address_AUD
+Hibernate: 
+    
+    drop table school_AUD
+Hibernate: 
+    
+    drop table student
+Hibernate: 
+    
+    drop table student_address
+Hibernate: 
+    
+    drop table student_AUD
+Hibernate: 
+    
+    drop table student_subject
+Hibernate: 
+    
+    drop table student_subject_AUD
+Hibernate: 
+    
+    drop table subject
+Hibernate: 
+    
+    drop table subject_AUD
+Hibernate: 
+    
+    drop table Syst_user
+Hibernate: 
+    
+    drop table Syst_user_address
+Hibernate: 
+    
+    drop table Syst_user_AUD
+Hibernate: 
+    
+    create table address (
+       Id numeric(19,0) not null,
+        Created_by varchar(65) not null,
+        created_Date datetime,
+        update_Date datetime,
+        Updated_by varchar(65),
+        address_Line_1 varchar(255),
+        Address_Line_2 varchar(255),
+        Address_Type varchar(255),
+        Area varchar(255),
+        Code varchar(255),
+        Street varchar(255),
+        school_id numeric(19,0),
+        primary key (Id)
+    )
+Hibernate: 
+    
+    create table address_AUD (
+       Id numeric(19,0) not null,
+        REV int not null,
+        REVTYPE smallint,
+        Created_by varchar(65),
+        created_Date datetime,
+        update_Date datetime,
+        Updated_by varchar(65),
+        address_Line_1 varchar(255),
+        Address_Line_2 varchar(255),
+        Address_Type varchar(255),
+        Area varchar(255),
+        Code varchar(255),
+        Street varchar(255),
+        primary key (Id, REV)
+    )
+Hibernate: 
+    
+    create table assessment (
+       Id numeric(19,0) not null,
+        Created_by varchar(65) not null,
+        created_Date datetime,
+        update_Date datetime,
+        Updated_by varchar(65),
+        assessment_status varchar(255),
+        description varchar(255),
+        due_date datetime,
+        first_submission_date datetime,
+        full_mark double precision,
+        name varchar(255),
+        pass_mark double precision,
+        student_mark double precision,
+        subject_Id numeric(19,0),
+        primary key (Id)
+    )
+Hibernate: 
+    
+    create table assessment_AUD (
+       Id numeric(19,0) not null,
+        REV int not null,
+        REVTYPE smallint,
+        Created_by varchar(65),
+        created_Date datetime,
+        update_Date datetime,
+        Updated_by varchar(65),
+        assessment_status varchar(255),
+        description varchar(255),
+        due_date datetime,
+        first_submission_date datetime,
+        full_mark double precision,
+        name varchar(255),
+        pass_mark double precision,
+        student_mark double precision,
+        subject_Id numeric(19,0),
+        primary key (Id, REV)
+    )
+Hibernate: 
+    
+    create table contact_detail (
+       Id numeric(19,0) not null,
+        Created_by varchar(65) not null,
+        created_Date datetime,
+        update_Date datetime,
+        Updated_by varchar(65),
+        cellphone_number varchar(255),
+        email_address varchar(255),
+        telephone_number varchar(255),
+        primary key (Id)
+    )
+Hibernate: 
+    
+    create table contact_detail_AUD (
+       Id numeric(19,0) not null,
+        REV int not null,
+        REVTYPE smallint,
+        Created_by varchar(65),
+        created_Date datetime,
+        update_Date datetime,
+        Updated_by varchar(65),
+        cellphone_number varchar(255),
+        email_address varchar(255),
+        telephone_number varchar(255),
+        primary key (Id, REV)
+    )
+Hibernate: 
+    
+    create table employee (
+       Id numeric(19,0) not null,
+        Created_by varchar(65) not null,
+        created_Date datetime,
+        update_Date datetime,
+        Updated_by varchar(65),
+        First_Name varchar(255),
+        gender varchar(255),
+        Identity_Number varchar(255),
+        Last_Name varchar(255),
+        Person_Type varchar(255),
+        employee_id varchar(255),
+        employee_type varchar(255),
+        sace_reg_number varchar(255),
+        contactDetails_Id numeric(19,0),
+        school_Id numeric(19,0),
+        primary key (Id)
+    )
+Hibernate: 
+    
+    create table employee_address (
+       Employee_Id numeric(19,0) not null,
+        addresses_Id numeric(19,0) not null
+    )
+Hibernate: 
+    
+    create table employee_AUD (
+       Id numeric(19,0) not null,
+        REV int not null,
+        REVTYPE smallint,
+        Created_by varchar(65),
+        created_Date datetime,
+        update_Date datetime,
+        Updated_by varchar(65),
+        employee_id varchar(255),
+        employee_type varchar(255),
+        sace_reg_number varchar(255),
+        school_Id numeric(19,0),
+        primary key (Id, REV)
+    )
+Hibernate: 
+    
+    create table employee_grade (
+       employee_id numeric(19,0) not null,
+        grade_id numeric(19,0) not null
+    )
+Hibernate: 
+    
+    create table employee_grade_AUD (
+       REV int not null,
+        employee_id numeric(19,0) not null,
+        grade_id numeric(19,0) not null,
+        REVTYPE smallint,
+        primary key (REV, employee_id, grade_id)
+    )
+Hibernate: 
+    
+    create table employee_subject (
+       employee_id numeric(19,0) not null,
+        subject_id numeric(19,0) not null
+    )
+Hibernate: 
+    
+    create table employee_subject_AUD (
+       REV int not null,
+        employee_id numeric(19,0) not null,
+        subject_id numeric(19,0) not null,
+        REVTYPE smallint,
+        primary key (REV, employee_id, subject_id)
+    )
+Hibernate: 
+    
+    create table grade (
+       Id numeric(19,0) not null,
+        Created_by varchar(65) not null,
+        created_Date datetime,
+        update_Date datetime,
+        Updated_by varchar(65),
+        description varchar(255),
+        school_Id numeric(19,0),
+        primary key (Id)
+    )
+Hibernate: 
+    
+    create table grade_AUD (
+       Id numeric(19,0) not null,
+        REV int not null,
+        REVTYPE smallint,
+        Created_by varchar(65),
+        created_Date datetime,
+        update_Date datetime,
+        Updated_by varchar(65),
+        description varchar(255),
+        school_Id numeric(19,0),
+        primary key (Id, REV)
+    )
+Hibernate: 
+    
+    create table hibernate_sequence (
+       next_val numeric(19,0)
+    )
+Hibernate: 
+    
+    insert into hibernate_sequence values ( 1 )
+Hibernate: 
+    
+    insert into hibernate_sequence values ( 1 )
+Hibernate: 
+    
+    insert into hibernate_sequence values ( 1 )
+Hibernate: 
+    
+    insert into hibernate_sequence values ( 1 )
+Hibernate: 
+    
+    insert into hibernate_sequence values ( 1 )
+Hibernate: 
+    
+    insert into hibernate_sequence values ( 1 )
+Hibernate: 
+    
+    insert into hibernate_sequence values ( 1 )
+Hibernate: 
+    
+    insert into hibernate_sequence values ( 1 )
+Hibernate: 
+    
+    insert into hibernate_sequence values ( 1 )
+Hibernate: 
+    
+    create table REVINFO (
+       REV int identity not null,
+        REVTSTMP numeric(19,0),
+        primary key (REV)
+    )
+Hibernate: 
+    
+    create table school (
+       Id numeric(19,0) not null,
+        Created_by varchar(65) not null,
+        created_Date datetime,
+        update_Date datetime,
+        Updated_by varchar(65),
+        Registration_number varchar(255),
+        school_name varchar(255),
+        contactDetail_Id numeric(19,0),
+        primary key (Id)
+    )
+Hibernate: 
+    
+    create table School_Address_AUD (
+       REV int not null,
+        school_id numeric(19,0) not null,
+        Id numeric(19,0) not null,
+        REVTYPE smallint,
+        primary key (REV, school_id, Id)
+    )
+Hibernate: 
+    
+    create table school_AUD (
+       Id numeric(19,0) not null,
+        REV int not null,
+        REVTYPE smallint,
+        Created_by varchar(65),
+        created_Date datetime,
+        update_Date datetime,
+        Updated_by varchar(65),
+        Registration_number varchar(255),
+        school_name varchar(255),
+        contactDetail_Id numeric(19,0),
+        primary key (Id, REV)
+    )
+Hibernate: 
+    
+    create table student (
+       Id numeric(19,0) not null,
+        Created_by varchar(65) not null,
+        created_Date datetime,
+        update_Date datetime,
+        Updated_by varchar(65),
+        First_Name varchar(255),
+        gender varchar(255),
+        Identity_Number varchar(255),
+        Last_Name varchar(255),
+        Person_Type varchar(255),
+        student_number varchar(255),
+        contactDetails_Id numeric(19,0),
+        grade_Id numeric(19,0),
+        school_Id numeric(19,0),
+        primary key (Id)
+    )
+Hibernate: 
+    
+    create table student_address (
+       Student_Id numeric(19,0) not null,
+        addresses_Id numeric(19,0) not null
+    )
+Hibernate: 
+    
+    create table student_AUD (
+       Id numeric(19,0) not null,
+        REV int not null,
+        REVTYPE smallint,
+        Created_by varchar(65),
+        created_Date datetime,
+        update_Date datetime,
+        Updated_by varchar(65),
+        student_number varchar(255),
+        grade_Id numeric(19,0),
+        school_Id numeric(19,0),
+        primary key (Id, REV)
+    )
+Hibernate: 
+    
+    create table student_subject (
+       student_id numeric(19,0) not null,
+        subject_id numeric(19,0) not null
+    )
+Hibernate: 
+    
+    create table student_subject_AUD (
+       REV int not null,
+        student_id numeric(19,0) not null,
+        subject_id numeric(19,0) not null,
+        REVTYPE smallint,
+        primary key (REV, student_id, subject_id)
+    )
+Hibernate: 
+    
+    create table subject (
+       Id numeric(19,0) not null,
+        Created_by varchar(65) not null,
+        created_Date datetime,
+        update_Date datetime,
+        Updated_by varchar(65),
+        code varchar(255),
+        name varchar(255),
+        school_Id numeric(19,0),
+        primary key (Id)
+    )
+Hibernate: 
+    
+    create table subject_AUD (
+       Id numeric(19,0) not null,
+        REV int not null,
+        REVTYPE smallint,
+        Created_by varchar(65),
+        created_Date datetime,
+        update_Date datetime,
+        Updated_by varchar(65),
+        code varchar(255),
+        name varchar(255),
+        school_Id numeric(19,0),
+        primary key (Id, REV)
+    )
+Hibernate: 
+    
+    create table Syst_user (
+       Id numeric(19,0) not null,
+        Created_by varchar(65) not null,
+        created_Date datetime,
+        update_Date datetime,
+        Updated_by varchar(65),
+        First_Name varchar(255),
+        gender varchar(255),
+        Identity_Number varchar(255),
+        Last_Name varchar(255),
+        Person_Type varchar(255),
+        change_password varchar(255),
+        confirm_password varchar(255),
+        identifer varchar(255),
+        password varchar(255),
+        system_user_status varchar(255),
+        user_name varchar(255),
+        contactDetails_Id numeric(19,0),
+        school_Id numeric(19,0),
+        primary key (Id)
+    )
+Hibernate: 
+    
+    create table Syst_user_address (
+       User_Id numeric(19,0) not null,
+        addresses_Id numeric(19,0) not null
+    )
+Hibernate: 
+    
+    create table Syst_user_AUD (
+       Id numeric(19,0) not null,
+        REV int not null,
+        REVTYPE smallint,
+        Created_by varchar(65),
+        created_Date datetime,
+        update_Date datetime,
+        Updated_by varchar(65),
+        change_password varchar(255),
+        confirm_password varchar(255),
+        identifer varchar(255),
+        password varchar(255),
+        system_user_status varchar(255),
+        user_name varchar(255),
+        school_Id numeric(19,0),
+        primary key (Id, REV)
+    )
+Hibernate: 
+    
+    alter table employee 
+       add constraint UK_mc5x07dj0uft9opsxchp0uwji unique (employee_id)
+Hibernate: 
+    
+    alter table employee_address 
+       add constraint UK_bqj4vrjv1vw7k24jnnuo2lndm unique (addresses_Id)
+Hibernate: 
+    
+    alter table student 
+       add constraint UK_17gskajnuiawdedks0b3lp8rx unique (student_number)
+Hibernate: 
+    
+    alter table student_address 
+       add constraint UK_dvcbdsmyf64xlr68edtbpgbyd unique (addresses_Id)
+Hibernate: 
+    
+    alter table Syst_user_address 
+       add constraint UK_s5j6evrjaq2grcr3t3at4rtcu unique (addresses_Id)
+Hibernate: 
+    
+    alter table address 
+       add constraint FKrb91l9ve2aotditavdrna4gtm 
+       foreign key (school_id) 
+       references school
+Hibernate: 
+    
+    alter table address_AUD 
+       add constraint FK8pavhn1oejo2hbfyi0wwxlhk7 
+       foreign key (REV) 
+       references REVINFO
+Hibernate: 
+    
+    alter table assessment 
+       add constraint FKecac2djaj84t6ssnfgb6cw606 
+       foreign key (subject_Id) 
+       references subject
+Hibernate: 
+    
+    alter table assessment_AUD 
+       add constraint FKlqnonjrkv6ocdurjx3ois1t6h 
+       foreign key (REV) 
+       references REVINFO
+Hibernate: 
+    
+    alter table contact_detail_AUD 
+       add constraint FKeshw37x9pafh93xdx81gb6vno 
+       foreign key (REV) 
+       references REVINFO
+Hibernate: 
+    
+    alter table employee 
+       add constraint FK45tyjbjaqd63whyt8vvf4e6mx 
+       foreign key (contactDetails_Id) 
+       references contact_detail
+Hibernate: 
+    
+    alter table employee 
+       add constraint FKphlll6i9d0y8do290pfylk4qd 
+       foreign key (school_Id) 
+       references school
+Hibernate: 
+    
+    alter table employee_address 
+       add constraint FK9vm8hlxq7dqhl4euykuhmc4w 
+       foreign key (addresses_Id) 
+       references address
+Hibernate: 
+    
+    alter table employee_address 
+       add constraint FK2ybnvhswp1wfc9xaqcwe7tsoh 
+       foreign key (Employee_Id) 
+       references employee
+Hibernate: 
+    
+    alter table employee_AUD 
+       add constraint FKpendlmkecy76ioxqsvu8ymdlc 
+       foreign key (REV) 
+       references REVINFO
+Hibernate: 
+    
+    alter table employee_grade 
+       add constraint FKbm0e56nk8yadiscx960ui2wbi 
+       foreign key (grade_id) 
+       references grade
+Hibernate: 
+    
+    alter table employee_grade 
+       add constraint FKipnc6frq0c5v64etlxc80i032 
+       foreign key (employee_id) 
+       references employee
+Hibernate: 
+    
+    alter table employee_grade_AUD 
+       add constraint FKbbgqhfvml1k6un0qy438eqywo 
+       foreign key (REV) 
+       references REVINFO
+Hibernate: 
+    
+    alter table employee_subject 
+       add constraint FKebgd4h69lvaidagr2thkpyfhx 
+       foreign key (subject_id) 
+       references subject
+Hibernate: 
+    
+    alter table employee_subject 
+       add constraint FKeiy8in9aganye8lq0lkjt5r4l 
+       foreign key (employee_id) 
+       references employee
+Hibernate: 
+    
+    alter table employee_subject_AUD 
+       add constraint FK68u3k8g4pgcaii1mx433ugf1r 
+       foreign key (REV) 
+       references REVINFO
+Hibernate: 
+    
+    alter table grade 
+       add constraint FKgnpyknjs4abtev9u75xp0iti1 
+       foreign key (school_Id) 
+       references school
+Hibernate: 
+    
+    alter table grade_AUD 
+       add constraint FKjm5c5m0s2ejypw6fw7taokqeb 
+       foreign key (REV) 
+       references REVINFO
+Hibernate: 
+    
+    alter table school 
+       add constraint FK7ov9cfvj3tdy3r6y0gpjcqu4k 
+       foreign key (contactDetail_Id) 
+       references contact_detail
+Hibernate: 
+    
+    alter table School_Address_AUD 
+       add constraint FKewp7btqqxuelh4fjkh1biok4b 
+       foreign key (REV) 
+       references REVINFO
+Hibernate: 
+    
+    alter table school_AUD 
+       add constraint FKjh4d6m093u816350hqsr8pbv8 
+       foreign key (REV) 
+       references REVINFO
+Hibernate: 
+    
+    alter table student 
+       add constraint FKotoup89ms54ji1a3ikigmc6va 
+       foreign key (contactDetails_Id) 
+       references contact_detail
+Hibernate: 
+    
+    alter table student 
+       add constraint FK693kxqrk7gfqwv5cmsi6cdwsb 
+       foreign key (grade_Id) 
+       references grade
+Hibernate: 
+    
+    alter table student 
+       add constraint FKa64b46u81lt7cqs08s4jqm2tp 
+       foreign key (school_Id) 
+       references school
+Hibernate: 
+    
+    alter table student_address 
+       add constraint FKh23sypqasja117gka6mv44ijd 
+       foreign key (addresses_Id) 
+       references address
+Hibernate: 
+    
+    alter table student_address 
+       add constraint FKaral8t3jfrw3ol9954q4sclyh 
+       foreign key (Student_Id) 
+       references student
+Hibernate: 
+    
+    alter table student_AUD 
+       add constraint FKj5ymsyc2n7qp56ekm71cdoy09 
+       foreign key (REV) 
+       references REVINFO
+Hibernate: 
+    
+    alter table student_subject 
+       add constraint FK5cvx0kd792xhvd99s3bsbygfq 
+       foreign key (subject_id) 
+       references subject
+Hibernate: 
+    
+    alter table student_subject 
+       add constraint FKnhw926s5os3ei5wqfaq94j0mh 
+       foreign key (student_id) 
+       references student
+Hibernate: 
+    
+    alter table student_subject_AUD 
+       add constraint FKddsd968it2q7wswp4idb9f2 
+       foreign key (REV) 
+       references REVINFO
+Hibernate: 
+    
+    alter table subject 
+       add constraint FK9e47itp6a7uxgehpmot21yp00 
+       foreign key (school_Id) 
+       references school
+Hibernate: 
+    
+    alter table subject_AUD 
+       add constraint FKidfs7r021qwgytnj9jln5l0hq 
+       foreign key (REV) 
+       references REVINFO
+Hibernate: 
+    
+    alter table Syst_user 
+       add constraint FK303l5ksi05yn3fh9w395hcolo 
+       foreign key (contactDetails_Id) 
+       references contact_detail
+Hibernate: 
+    
+    alter table Syst_user 
+       add constraint FKg0xywsky3jjvjosb55t3i8hl3 
+       foreign key (school_Id) 
+       references school
+Hibernate: 
+    
+    alter table Syst_user_address 
+       add constraint FK3jm3ryqjqj2ncdsufo51u2fqm 
+       foreign key (addresses_Id) 
+       references address
+Hibernate: 
+    
+    alter table Syst_user_address 
+       add constraint FKoqxew8pkv4o2iti7wr0vf4lvp 
+       foreign key (User_Id) 
+       references Syst_user
+Hibernate: 
+    
+    alter table Syst_user_AUD 
+       add constraint FKnru271krf5k1vyesi0i0920it 
+       foreign key (REV) 
+       references REVINFO
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        contact_detail
+        (Created_by, created_Date, update_Date, Updated_by, cellphone_number, email_address, telephone_number, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        school
+        (Created_by, created_Date, update_Date, Updated_by, contactDetail_Id, Registration_number, school_name, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        address
+        (Created_by, created_Date, update_Date, Updated_by, address_Line_1, Address_Line_2, Address_Type, Area, Code, Street, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        address
+        (Created_by, created_Date, update_Date, Updated_by, address_Line_1, Address_Line_2, Address_Type, Area, Code, Street, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        address 
+    set
+        school_id=? 
+    where
+        Id=?
+Hibernate: 
+    update
+        address 
+    set
+        school_id=? 
+    where
+        Id=?
+Hibernate: 
+    insert 
+    into
+        REVINFO
+        (REVTSTMP) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        contact_detail_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, cellphone_number, email_address, telephone_number, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        school_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, Registration_number, school_name, contactDetail_Id, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        address_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, address_Line_1, Address_Line_2, Address_Type, Area, Code, Street, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        address_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, address_Line_1, Address_Line_2, Address_Type, Area, Code, Street, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        School_Address_AUD
+        (REVTYPE, REV, school_id, Id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        School_Address_AUD
+        (REVTYPE, REV, school_id, Id) 
+    values
+        (?, ?, ?, ?)
+]]></system-out>
+    <system-err><![CDATA[135 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+150 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2eda0940, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3578436e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@706a04ae, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6eceb130, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@10a035a0, org.springframework.test.context.event.EventPublishingTestExecutionListener@67b467e9]
+357 [main] INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+483 [main] INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 106ms. Found 7 repository interfaces.
+Jun 08, 2023 2:30:27 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [
+	name: server-persistence-unit
+	...]
+Jun 08, 2023 2:30:27 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.2.18.Final}
+Jun 08, 2023 2:30:27 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+Jun 08, 2023 2:30:27 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+1006 [main] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+1549 [main] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+Jun 08, 2023 2:30:28 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+Jun 08, 2023 2:30:28 PM org.hibernate.envers.boot.internal.EnversServiceImpl configure
+INFO: Envers integration enabled? : true
+Jun 08, 2023 2:30:30 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@5fef2aac'
+3340 [main] INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'server-persistence-unit'
+Jun 08, 2023 2:30:30 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:30 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:30 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:30 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:30 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:30 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:30 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:30 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:30 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:30 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:30 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:30 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:30 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:30 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:30 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    1823700 nanoseconds spent acquiring 5 JDBC connections;
+    66100 nanoseconds spent releasing 4 JDBC connections;
+    29970900 nanoseconds spent preparing 21 JDBC statements;
+    38470500 nanoseconds spent executing 21 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    70150900 nanoseconds spent executing 2 flushes (flushing a total of 15 entities and 2 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+]]></system-err>
+  </testcase>
+  <testcase name="TestB" classname="sars.gov.za.management.service.ServiceLayerTest" time="0.207">
+    <system-out><![CDATA[Hibernate: 
+    select
+        school0_.Id as Id1_16_,
+        school0_.Created_by as Created_2_16_,
+        school0_.created_Date as created_3_16_,
+        school0_.update_Date as update_D4_16_,
+        school0_.Updated_by as Updated_5_16_,
+        school0_.contactDetail_Id as contactD8_16_,
+        school0_.Registration_number as Registra6_16_,
+        school0_.school_name as school_n7_16_ 
+    from
+        school school0_ 
+    where
+        school0_.school_name=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        grade
+        (Created_by, created_Date, update_Date, Updated_by, description, school_Id, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        REVINFO
+        (REVTSTMP) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        grade_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, description, school_Id, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        grade
+        (Created_by, created_Date, update_Date, Updated_by, description, school_Id, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        REVINFO
+        (REVTSTMP) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        grade_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, description, school_Id, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        grade
+        (Created_by, created_Date, update_Date, Updated_by, description, school_Id, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        REVINFO
+        (REVTSTMP) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        grade_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, description, school_Id, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        grade
+        (Created_by, created_Date, update_Date, Updated_by, description, school_Id, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        REVINFO
+        (REVTSTMP) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        grade_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, description, school_Id, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        grade
+        (Created_by, created_Date, update_Date, Updated_by, description, school_Id, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        REVINFO
+        (REVTSTMP) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        grade_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, description, school_Id, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+]]></system-out>
+    <system-err><![CDATA[Jun 08, 2023 2:30:31 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    21400 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    209400 nanoseconds spent preparing 1 JDBC statements;
+    3822600 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    37900 nanoseconds spent acquiring 2 JDBC connections;
+    14100 nanoseconds spent releasing 1 JDBC connections;
+    355400 nanoseconds spent preparing 5 JDBC statements;
+    5223200 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    5687500 nanoseconds spent executing 2 flushes (flushing a total of 4 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    21700 nanoseconds spent acquiring 2 JDBC connections;
+    19500 nanoseconds spent releasing 1 JDBC connections;
+    301700 nanoseconds spent preparing 5 JDBC statements;
+    3503900 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3505600 nanoseconds spent executing 2 flushes (flushing a total of 4 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    26000 nanoseconds spent acquiring 2 JDBC connections;
+    16700 nanoseconds spent releasing 1 JDBC connections;
+    176500 nanoseconds spent preparing 5 JDBC statements;
+    1968800 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1717900 nanoseconds spent executing 2 flushes (flushing a total of 4 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    25800 nanoseconds spent acquiring 2 JDBC connections;
+    10700 nanoseconds spent releasing 1 JDBC connections;
+    197800 nanoseconds spent preparing 5 JDBC statements;
+    1946500 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2172800 nanoseconds spent executing 2 flushes (flushing a total of 4 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    21900 nanoseconds spent acquiring 2 JDBC connections;
+    10900 nanoseconds spent releasing 1 JDBC connections;
+    167300 nanoseconds spent preparing 5 JDBC statements;
+    1855200 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2038600 nanoseconds spent executing 2 flushes (flushing a total of 4 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+]]></system-err>
+  </testcase>
+  <testcase name="TestC" classname="sars.gov.za.management.service.ServiceLayerTest" time="0.038">
+    <system-out><![CDATA[Hibernate: 
+    select
+        school0_.Id as Id1_16_,
+        school0_.Created_by as Created_2_16_,
+        school0_.created_Date as created_3_16_,
+        school0_.update_Date as update_D4_16_,
+        school0_.Updated_by as Updated_5_16_,
+        school0_.contactDetail_Id as contactD8_16_,
+        school0_.Registration_number as Registra6_16_,
+        school0_.school_name as school_n7_16_ 
+    from
+        school school0_ 
+    where
+        school0_.school_name=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        subject
+        (Created_by, created_Date, update_Date, Updated_by, code, name, school_Id, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        REVINFO
+        (REVTSTMP) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        subject_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, code, name, school_Id, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        subject
+        (Created_by, created_Date, update_Date, Updated_by, code, name, school_Id, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        REVINFO
+        (REVTSTMP) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        subject_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, code, name, school_Id, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        subject
+        (Created_by, created_Date, update_Date, Updated_by, code, name, school_Id, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        REVINFO
+        (REVTSTMP) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        subject_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, code, name, school_Id, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        subject
+        (Created_by, created_Date, update_Date, Updated_by, code, name, school_Id, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        REVINFO
+        (REVTSTMP) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        subject_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, code, name, school_Id, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+]]></system-out>
+    <system-err><![CDATA[Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    16600 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    78500 nanoseconds spent preparing 1 JDBC statements;
+    1302000 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    37800 nanoseconds spent acquiring 2 JDBC connections;
+    16700 nanoseconds spent releasing 1 JDBC connections;
+    514900 nanoseconds spent preparing 5 JDBC statements;
+    6122300 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    6324700 nanoseconds spent executing 2 flushes (flushing a total of 4 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    31800 nanoseconds spent acquiring 2 JDBC connections;
+    12900 nanoseconds spent releasing 1 JDBC connections;
+    200200 nanoseconds spent preparing 5 JDBC statements;
+    1871000 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2021300 nanoseconds spent executing 2 flushes (flushing a total of 4 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    23200 nanoseconds spent acquiring 2 JDBC connections;
+    12700 nanoseconds spent releasing 1 JDBC connections;
+    145100 nanoseconds spent preparing 5 JDBC statements;
+    1319600 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    1459300 nanoseconds spent executing 2 flushes (flushing a total of 4 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    19000 nanoseconds spent acquiring 2 JDBC connections;
+    13500 nanoseconds spent releasing 1 JDBC connections;
+    252100 nanoseconds spent preparing 5 JDBC statements;
+    1991300 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    2019800 nanoseconds spent executing 2 flushes (flushing a total of 4 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+]]></system-err>
+  </testcase>
+  <testcase name="TestD" classname="sars.gov.za.management.service.ServiceLayerTest" time="0.073">
+    <system-out><![CDATA[Hibernate: 
+    select
+        school0_.Id as Id1_16_,
+        school0_.Created_by as Created_2_16_,
+        school0_.created_Date as created_3_16_,
+        school0_.update_Date as update_D4_16_,
+        school0_.Updated_by as Updated_5_16_,
+        school0_.contactDetail_Id as contactD8_16_,
+        school0_.Registration_number as Registra6_16_,
+        school0_.school_name as school_n7_16_ 
+    from
+        school school0_ 
+    where
+        school0_.school_name=?
+Hibernate: 
+    select
+        grade0_.Id as Id1_13_,
+        grade0_.Created_by as Created_2_13_,
+        grade0_.created_Date as created_3_13_,
+        grade0_.update_Date as update_D4_13_,
+        grade0_.Updated_by as Updated_5_13_,
+        grade0_.description as descript6_13_,
+        grade0_.school_Id as school_I7_13_ 
+    from
+        grade grade0_
+Hibernate: 
+    select
+        subject0_.Id as Id1_24_,
+        subject0_.Created_by as Created_2_24_,
+        subject0_.created_Date as created_3_24_,
+        subject0_.update_Date as update_D4_24_,
+        subject0_.Updated_by as Updated_5_24_,
+        subject0_.code as code6_24_,
+        subject0_.name as name7_24_,
+        subject0_.school_Id as school_I8_24_ 
+    from
+        subject subject0_
+Hibernate: 
+    select
+        addresses0_.school_id as school_12_0_1_,
+        addresses0_.Id as Id1_0_1_,
+        addresses0_.Id as Id1_0_0_,
+        addresses0_.Created_by as Created_2_0_0_,
+        addresses0_.created_Date as created_3_0_0_,
+        addresses0_.update_Date as update_D4_0_0_,
+        addresses0_.Updated_by as Updated_5_0_0_,
+        addresses0_.address_Line_1 as address_6_0_0_,
+        addresses0_.Address_Line_2 as Address_7_0_0_,
+        addresses0_.Address_Type as Address_8_0_0_,
+        addresses0_.Area as Area9_0_0_,
+        addresses0_.Code as Code10_0_0_,
+        addresses0_.Street as Street11_0_0_ 
+    from
+        address addresses0_ 
+    where
+        addresses0_.school_id=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        contact_detail
+        (Created_by, created_Date, update_Date, Updated_by, cellphone_number, email_address, telephone_number, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        employee
+        (Created_by, created_Date, update_Date, Updated_by, contactDetails_Id, First_Name, gender, Identity_Number, Last_Name, Person_Type, employee_id, employee_type, sace_reg_number, school_Id, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        address
+        (Created_by, created_Date, update_Date, Updated_by, address_Line_1, Address_Line_2, Address_Type, Area, Code, Street, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_address
+        (Employee_Id, addresses_Id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_grade
+        (employee_id, grade_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_grade
+        (employee_id, grade_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_grade
+        (employee_id, grade_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_grade
+        (employee_id, grade_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_grade
+        (employee_id, grade_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_subject
+        (employee_id, subject_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_subject
+        (employee_id, subject_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_subject
+        (employee_id, subject_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_subject
+        (employee_id, subject_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        REVINFO
+        (REVTSTMP) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        contact_detail_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, cellphone_number, email_address, telephone_number, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, employee_id, employee_type, sace_reg_number, school_Id, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        address_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, address_Line_1, Address_Line_2, Address_Type, Area, Code, Street, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_grade_AUD
+        (REVTYPE, REV, employee_id, grade_id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_grade_AUD
+        (REVTYPE, REV, employee_id, grade_id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_grade_AUD
+        (REVTYPE, REV, employee_id, grade_id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_grade_AUD
+        (REVTYPE, REV, employee_id, grade_id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_grade_AUD
+        (REVTYPE, REV, employee_id, grade_id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_subject_AUD
+        (REVTYPE, REV, employee_id, subject_id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_subject_AUD
+        (REVTYPE, REV, employee_id, subject_id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_subject_AUD
+        (REVTYPE, REV, employee_id, subject_id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        employee_subject_AUD
+        (REVTYPE, REV, employee_id, subject_id) 
+    values
+        (?, ?, ?, ?)
+]]></system-out>
+    <system-err><![CDATA[Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    18000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    103800 nanoseconds spent preparing 1 JDBC statements;
+    773900 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    17800 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    162300 nanoseconds spent preparing 1 JDBC statements;
+    1703600 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    21800 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    13000 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    83200 nanoseconds spent preparing 1 JDBC statements;
+    1698800 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    3100 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    13900 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    123000 nanoseconds spent preparing 1 JDBC statements;
+    3701500 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    42700 nanoseconds spent acquiring 4 JDBC connections;
+    27300 nanoseconds spent releasing 3 JDBC connections;
+    1654900 nanoseconds spent preparing 32 JDBC statements;
+    23914500 nanoseconds spent executing 32 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    30992600 nanoseconds spent executing 2 flushes (flushing a total of 19 entities and 6 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+]]></system-err>
+  </testcase>
+  <testcase name="TestE" classname="sars.gov.za.management.service.ServiceLayerTest" time="0.051">
+    <system-out><![CDATA[Hibernate: 
+    select
+        school0_.Id as Id1_16_,
+        school0_.Created_by as Created_2_16_,
+        school0_.created_Date as created_3_16_,
+        school0_.update_Date as update_D4_16_,
+        school0_.Updated_by as Updated_5_16_,
+        school0_.contactDetail_Id as contactD8_16_,
+        school0_.Registration_number as Registra6_16_,
+        school0_.school_name as school_n7_16_ 
+    from
+        school school0_ 
+    where
+        school0_.school_name=?
+Hibernate: 
+    select
+        grade0_.Id as Id1_13_,
+        grade0_.Created_by as Created_2_13_,
+        grade0_.created_Date as created_3_13_,
+        grade0_.update_Date as update_D4_13_,
+        grade0_.Updated_by as Updated_5_13_,
+        grade0_.description as descript6_13_,
+        grade0_.school_Id as school_I7_13_ 
+    from
+        grade grade0_
+Hibernate: 
+    select
+        grade0_.Id as Id1_13_,
+        grade0_.Created_by as Created_2_13_,
+        grade0_.created_Date as created_3_13_,
+        grade0_.update_Date as update_D4_13_,
+        grade0_.Updated_by as Updated_5_13_,
+        grade0_.description as descript6_13_,
+        grade0_.school_Id as school_I7_13_ 
+    from
+        grade grade0_
+Hibernate: 
+    select
+        subject0_.Id as Id1_24_,
+        subject0_.Created_by as Created_2_24_,
+        subject0_.created_Date as created_3_24_,
+        subject0_.update_Date as update_D4_24_,
+        subject0_.Updated_by as Updated_5_24_,
+        subject0_.code as code6_24_,
+        subject0_.name as name7_24_,
+        subject0_.school_Id as school_I8_24_ 
+    from
+        subject subject0_
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        contact_detail
+        (Created_by, created_Date, update_Date, Updated_by, cellphone_number, email_address, telephone_number, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        student
+        (Created_by, created_Date, update_Date, Updated_by, contactDetails_Id, First_Name, gender, Identity_Number, Last_Name, Person_Type, grade_Id, school_Id, student_number, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        address
+        (Created_by, created_Date, update_Date, Updated_by, address_Line_1, Address_Line_2, Address_Type, Area, Code, Street, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        address
+        (Created_by, created_Date, update_Date, Updated_by, address_Line_1, Address_Line_2, Address_Type, Area, Code, Street, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        student_address
+        (Student_Id, addresses_Id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        student_address
+        (Student_Id, addresses_Id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        student_subject
+        (student_id, subject_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        student_subject
+        (student_id, subject_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        student_subject
+        (student_id, subject_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        student_subject
+        (student_id, subject_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        REVINFO
+        (REVTSTMP) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        contact_detail_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, cellphone_number, email_address, telephone_number, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        student_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, student_number, grade_Id, school_Id, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        address_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, address_Line_1, Address_Line_2, Address_Type, Area, Code, Street, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        address_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, address_Line_1, Address_Line_2, Address_Type, Area, Code, Street, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        student_subject_AUD
+        (REVTYPE, REV, student_id, subject_id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        student_subject_AUD
+        (REVTYPE, REV, student_id, subject_id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        student_subject_AUD
+        (REVTYPE, REV, student_id, subject_id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        student_subject_AUD
+        (REVTYPE, REV, student_id, subject_id) 
+    values
+        (?, ?, ?, ?)
+]]></system-out>
+    <system-err><![CDATA[Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    18200 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    76900 nanoseconds spent preparing 1 JDBC statements;
+    596700 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    15200 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    52900 nanoseconds spent preparing 1 JDBC statements;
+    405700 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    2900 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    13200 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    57400 nanoseconds spent preparing 1 JDBC statements;
+    727700 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    3700 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    15800 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    39300 nanoseconds spent preparing 1 JDBC statements;
+    329500 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    2300 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    68500 nanoseconds spent acquiring 5 JDBC connections;
+    45900 nanoseconds spent releasing 4 JDBC connections;
+    1366900 nanoseconds spent preparing 27 JDBC statements;
+    20816600 nanoseconds spent executing 27 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    24455100 nanoseconds spent executing 2 flushes (flushing a total of 17 entities and 4 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+]]></system-err>
+  </testcase>
+  <testcase name="TestF" classname="sars.gov.za.management.service.ServiceLayerTest" time="0.022">
+    <system-out><![CDATA[Hibernate: 
+    select
+        subject0_.Id as Id1_24_,
+        subject0_.Created_by as Created_2_24_,
+        subject0_.created_Date as created_3_24_,
+        subject0_.update_Date as update_D4_24_,
+        subject0_.Updated_by as Updated_5_24_,
+        subject0_.code as code6_24_,
+        subject0_.name as name7_24_,
+        subject0_.school_Id as school_I8_24_ 
+    from
+        subject subject0_
+Hibernate: 
+    select
+        subject0_.Id as Id1_24_,
+        subject0_.Created_by as Created_2_24_,
+        subject0_.created_Date as created_3_24_,
+        subject0_.update_Date as update_D4_24_,
+        subject0_.Updated_by as Updated_5_24_,
+        subject0_.code as code6_24_,
+        subject0_.name as name7_24_,
+        subject0_.school_Id as school_I8_24_ 
+    from
+        subject subject0_
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        assessment
+        (Created_by, created_Date, update_Date, Updated_by, assessment_status, description, due_date, first_submission_date, full_mark, name, pass_mark, student_mark, subject_Id, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        REVINFO
+        (REVTSTMP) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        assessment_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, assessment_status, description, due_date, first_submission_date, full_mark, name, pass_mark, student_mark, subject_Id, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+]]></system-out>
+    <system-err><![CDATA[Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    19500 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    47300 nanoseconds spent preparing 1 JDBC statements;
+    413700 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    3900 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    16800 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    62800 nanoseconds spent preparing 1 JDBC statements;
+    403800 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    3600 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    25100 nanoseconds spent acquiring 2 JDBC connections;
+    13600 nanoseconds spent releasing 1 JDBC connections;
+    327900 nanoseconds spent preparing 5 JDBC statements;
+    7630800 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    8488500 nanoseconds spent executing 2 flushes (flushing a total of 4 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+]]></system-err>
+  </testcase>
+  <testcase name="TestG" classname="sars.gov.za.management.service.ServiceLayerTest" time="0.037">
+    <system-out><![CDATA[Hibernate: 
+    select
+        school0_.Id as Id1_16_,
+        school0_.Created_by as Created_2_16_,
+        school0_.created_Date as created_3_16_,
+        school0_.update_Date as update_D4_16_,
+        school0_.Updated_by as Updated_5_16_,
+        school0_.contactDetail_Id as contactD8_16_,
+        school0_.Registration_number as Registra6_16_,
+        school0_.school_name as school_n7_16_ 
+    from
+        school school0_ 
+    where
+        school0_.school_name=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    select
+        next_val as id_val 
+    from
+        hibernate_sequence with (updlock,
+        rowlock)
+Hibernate: 
+    update
+        hibernate_sequence 
+    set
+        next_val= ? 
+    where
+        next_val=?
+Hibernate: 
+    insert 
+    into
+        contact_detail
+        (Created_by, created_Date, update_Date, Updated_by, cellphone_number, email_address, telephone_number, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        Syst_user
+        (Created_by, created_Date, update_Date, Updated_by, contactDetails_Id, First_Name, gender, Identity_Number, Last_Name, Person_Type, change_password, confirm_password, identifer, password, school_Id, system_user_status, user_name, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        address
+        (Created_by, created_Date, update_Date, Updated_by, address_Line_1, Address_Line_2, Address_Type, Area, Code, Street, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        address
+        (Created_by, created_Date, update_Date, Updated_by, address_Line_1, Address_Line_2, Address_Type, Area, Code, Street, Id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        Syst_user_address
+        (User_Id, addresses_Id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        Syst_user_address
+        (User_Id, addresses_Id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        REVINFO
+        (REVTSTMP) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        contact_detail_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, cellphone_number, email_address, telephone_number, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        Syst_user_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, change_password, confirm_password, identifer, password, system_user_status, user_name, school_Id, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        address_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, address_Line_1, Address_Line_2, Address_Type, Area, Code, Street, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        address_AUD
+        (REVTYPE, Created_by, created_Date, update_Date, Updated_by, address_Line_1, Address_Line_2, Address_Type, Area, Code, Street, Id, REV) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+]]></system-out>
+    <system-err><![CDATA[Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    25300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    231200 nanoseconds spent preparing 1 JDBC statements;
+    686400 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+Jun 08, 2023 2:30:31 PM org.hibernate.engine.internal.StatisticalLoggingSessionEventListener end
+INFO: Session Metrics {
+    82200 nanoseconds spent acquiring 5 JDBC connections;
+    70100 nanoseconds spent releasing 4 JDBC connections;
+    1106100 nanoseconds spent preparing 19 JDBC statements;
+    14536600 nanoseconds spent executing 19 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    15804900 nanoseconds spent executing 2 flushes (flushing a total of 13 entities and 2 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+]]></system-err>
+  </testcase>
+</testsuite>

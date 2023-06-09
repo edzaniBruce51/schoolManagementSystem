@@ -1,0 +1,9 @@
+sars\gov\za\management\common\Gender.class
+sars\gov\za\management\common\SystemUserStatus.class
+sars\gov\za\management\common\DataSourceConfiguration.class
+sars\gov\za\management\common\PersonType.class
+sars\gov\za\management\common\AddressType.class
+sars\gov\za\management\common\AssessmentStatus.class
+sars\gov\za\management\common\TestDataSourceConfiguration.class
+sars\gov\za\management\common\DataSourceUtility.class
+sars\gov\za\management\common\EmployeeType.class
